@@ -38,9 +38,11 @@ class MyWidget extends StatelessWidget {
           Icon(Icons.person)
           ],
       ),
-      body: Column(children: [
-        VideoCard()
-      ],),
+      body: SingleChildScrollView(
+        child: Column(children: [
+          VideoCard()
+        ],),
+      ),
     );
   }
 }
